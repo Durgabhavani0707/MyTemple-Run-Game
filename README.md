@@ -1,45 +1,136 @@
-# Hands-free Temple Run
-A temple run game controlled using face positions.
+# 🎮 Temple Run – Face Detection Based Game
 
-***
+An interactive Temple Run-inspired game built using **Python, OpenCV, and Flask**, where computer vision techniques make gameplay more engaging.
 
-<img src="media/1.gif" width="100%">
+The project explores face detection and real-time interaction to create an exciting gaming experience.
 
-## Prerequisites
+## 🌟 Project Overview
 
-Download and install Python 3.x ([link](https://www.python.org/downloads/))
+This project combines Python programming, computer vision, and web technologies to create an interactive gaming application.
 
-Clone the repository
+Instead of traditional gameplay alone, it explores using face detection to make game interaction more interesting.
 
-    git clone https://github.com/priyanksharma7/temple-run.git
+## ✨ Features
 
-(Optional) Create and activate a virtual environment
+- 🎮 Interactive Temple Run-inspired gameplay.
+- 📷 Real-time face detection using OpenCV.
+- 🤖 Computer vision integration.
+- 🖥️ Flask-based web application.
+- 🎨 Simple and user-friendly interface.
+- ⚡ Real-time video processing.
 
-    python -m venv virtual_env
-    .\virtual_env\Scripts\activate
+## 🛠️ Technologies Used
 
-Install dependencies
+| Technology | Purpose |
+|---|---|
+| Python | Core programming |
+| OpenCV | Face detection and image processing |
+| Haar Cascade | Face detection model |
+| Flask | Web application framework |
+| PyAutoGUI | Desktop interaction |
+| Imutils | Image processing utilities |
+| HTML | Frontend structure |
 
-    pip install opencv-contrib-python imutils pyautogui flask
+## 📂 Project Structure
 
-## How to run
+```text
+Temple-Run-Game/
+│
+├── temple-run-main/
+│   ├── app.py
+│   ├── game.py
+│   ├── haarcascade_frontalface_default.xml
+│   │
+│   ├── templates/
+│   │   └── index.html
+│   │
+│   └── media/
+│       └── 1.gif
+│
+├── .gitignore
+└── README.md
+```
 
-`game.py` : A python program that uses Haar Cascade Classifier for face detection and Opencv KCF tracker to register face movements from the camera's live stream. When the face lands on one of the four boxes, appropriate action is simulated using the `pyutogui` library.  
+## ⚙️ Installation and Setup
 
-    python game.py
-Note: Press 'q' to exit.
+### 1. Clone the Repository
 
-`app.py` : A Flask web application that implements the game controls logic and displays the Temple Run game as well as instructions together on a webpage.
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
 
-    python app.py
-Note: Press 'Ctrl+C' in the terminal to exit.
+### 2. Navigate to the Project Folder
 
-***
+```bash
+cd Temple-Run-Game/temple-run-main
+```
 
-### Acknowledgements
+### 3. Create a Virtual Environment
 
-Taha Anwar, Training a Custom Object Detector with DLIB & Making Gesture Controlled Applications, https://learnopencv.com/training-a-custom-object-detector-with-dlib-making-gesture-controlled-applications/
+```bash
+python -m venv virtual_env
+```
 
-Nakul Lakhotia, Video Streaming in Web Browsers with OpenCV & Flask, https://towardsdatascience.com/video-streaming-in-web-browsers-with-opencv-flask-93a38846fe00
+### 4. Activate Virtual Environment
 
-Oluwaseun Ilori, Deploying Your First Opencv Flask Web Application On Heroku, https://medium.com/analytics-vidhya/deploying-your-opencv-flask-web-application-on-heroku-c23efcceb1e8
+For Windows:
+
+```bash
+virtual_env\Scripts\activate
+```
+
+### 5. Install Dependencies
+
+```bash
+pip install opencv-contrib-python imutils pyautogui flask
+```
+
+### 6. Run the Application
+
+```bash
+python app.py
+```
+
+### 7. Open in Browser
+
+```text
+http://127.0.0.1:5000
+```
+
+## 🧠 Concepts Learned
+
+- Computer Vision
+- Face Detection
+- Image Processing
+- Python Application Development
+- Flask Web Development
+- Real-Time Video Processing
+
+## 🎯 Project Objective
+
+The main objective is to explore how computer vision can be integrated into interactive gaming applications using Python.
+
+## 🔮 Future Improvements
+
+- Improve face tracking accuracy.
+- Add gesture-based game controls.
+- Introduce multiple difficulty levels.
+- Add score tracking and leaderboard.
+- Improve the user interface.
+- Optimize real-time processing performance.
+
+## 👩‍💻 Developer
+
+**Durga Bhavani Avuthu**
+
+B.Tech – Computer Science and Engineering
+
+Interested in Full Stack Development, Artificial Intelligence, and Computer Vision.
+
+🔗 GitHub: https://github.com/Durgabhavani0707
+
+---
+
+⭐ If you find this project interesting, consider giving it a star!
+
+**Built with Python ❤️ and curiosity.**
